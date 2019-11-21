@@ -1,0 +1,81 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:black;
+    margin: 0;
+    padding: 0;
+}
+header{
+    height:80px ;
+    background-color: orangered;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    padding: 4px;
+    /*position: fixed;
+    width: 100%;*/
+
+}
+h1{
+    padding: 2px;
+    letter-spacing: 1.5px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.filmes{
+   padding: 10px;
+   width: 200px;
+   height: 300px;
+   cursor: pointer;
+   
+}
+#opacitSection{
+    margin:13px 0;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.image{
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    margin: 8px;
+}
+.p{
+    display: inline-block;
+    color: white;
+    position: absolute;
+    margin-left: 340px;
+    width: 50%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+
+}
+.button{
+    position: relative;
+    display: block;
+    color:white;
+    margin: 0 97.5%;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.button:hover{
+    font-size: 21px;
+}
+footer{
+    height:90px ;
+    background-color: orangered;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    letter-spacing: 1px;
+}
