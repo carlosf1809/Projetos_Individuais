@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://use.fontawesome.com/1602767878.js"></script>
+    <script src="formulario.js"></script>
+    <link rel="stylesheet" href="delicie.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>deliciê</title>
+  </head>
+  <body>
+     
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <img id="logo" src="../pratica13/imagenspadaria/logo.jpg" alt="">
+
+        <div class="container-fluid ml-3 mr-2 ">
+
+          <a class="navbar-brand mr-5 " id="delicie"  href="#">Deliciê</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+              <li class="nav-item  ">
+                <a class="nav-link active" href="delicie.html">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Encomendar <i class="fa fa-truck" aria-hidden="true"></i> </a>
+              </li>
+              <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="cardapio">Cardápio <i class="fa fa-cutlery" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="cardapioPizza.html">pizzas</a>
+                      <a class="dropdown-item" href="cardapioPaes.html">pães</a>
+                      <a class="dropdown-item" href="cardapioSalgados.html">salgados</a>
+                      <a class="dropdown-item" href="cardapioSanduiches.html">sanduíches</a>
+                  </div>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">contatos <i class="fa fa-phone" aria-hidden="true"></i> </a>
+              </li>
+            </ul>
+
+            <form class="form-inline">
+              <input class="form-control mr-2" type="search" placeholder="Buscar..." >
+              <button class="btn btn-outline-dark p" type="submit">OK</button>
+
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-11 text-center my-5">
+                <h1 class="display-4"> <i class="fa fa-paper-plane" aria-hidden="true"></i>Fale conosco</h1>
+
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-10 col-md-18 col-lg-6">
+                <form>
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-5">
+                            <label for="nome">Digite seu nome:</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome">
+                        </div>
+
+                        <div class="form-group col-sm-5">
+                            <label for="sobrenome">Digite seu sobrenome:</label>
+                            <input type="text" class="form-control" id="sobrenome   " placeholder="Sobrenome">
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-10">
+                            <label for="email">E-mail:</label>
+                            <input type="email" class="form-control" id="email" placeholder="E-mail">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-5">
+                            <label for="city">Cidade</label>
+                            <input type="text" class="form-control" id="city" placeholder="Cidade">
+                        </div>
+
+                        <div class="form-group col-sm-5">
+                            <label for="Estado">Estado</label>
+                            <select id="Estado" class="form-control">
+                                <option selected>escolha</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-10">
+                            <label for="texto">Digite sua mensagem:</label>
+                            <textarea  id="textoo" class="form-control" cols="30" rows="8"></textarea>
+                        </div>
+                    
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modool" onclick="validarFormulario()">Enviar</button>
+
+                            <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus"  data-content="seus dados serão roubados">Ajuda</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modool" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Confirme seus dados</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="respostanome"></div>
+            <div id="respostacidade"></div>
+            <div id="resposta"></div>
+            <div id="respostaTwo"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">mudar</button>
+            <button type="submit" class="btn btn-primary" onclick="validarFor()" >Salvar </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <main id="footer">
+          <div class="foot">
+            <p>
+              <span style="font-weight:bold;"> FUNCIONAMENTOS</span><br><br>
+              De portas abertas para você,
+              sempre.Segunda a Domingo<br><br>
+              <span style="font-weight:bold; ">06:00 - 22:00 </span>
+            </p>
+          </div>
+          <div class="foot"><p>
+              <span style="font-weight:bold;"> LANCHONTE</span><br><br>
+              Para matar a fome ou só um
+              cafezinho, Segunda a Domingo<br><br>
+              <span style="font-weight:bold; ">06:00 - 21:40 </span>
+          </p></div>
+          <div class="foot"><p>
+              <span style="font-weight:bold;"> REDES SOCIAIS</span><br><br>
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+              <br><br>
+          
+              </p></div>
+            <div class="foot"><p>
+                <span style="font-weight:bold;">CONTATOS</span><br><br>
+                <i class="fa fa-phone fa-lg" aria-hidden="true"></i>(31) 3232-1291<br>
+                <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>(31) 9 9006-5243<br>
+                <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> deliciê@gmail.com
+                
+               
+              </p></div>
+          </main>
+      </footer>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      
+      <script>
+        $(function(){
+            $('[data-toggle="popover"]').popover()
+        })      
+    </script>
+
+    </body>
+</html>
